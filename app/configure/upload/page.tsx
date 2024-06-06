@@ -13,6 +13,7 @@ const Page = () => {
   const [isDragOver, setIsDragOver] = useState<boolean>(false);
   const [isPending, startTransition] = useTransition();
   const [uploadProgress, setUploadProgress] = useState<number>(0);
+
   const router = useRouter();
 
   const { startUpload, isUploading } = useUploadThing("imageUploader", {
